@@ -9,7 +9,7 @@ int main() {
 	char x;
 	int *ptr;
 	short shint;
-	char formatled[10], *ptr1;
+	char formatled[10], *ptr1, *ptr2;
 
 	*ptr = 50;
 	x = 511;
@@ -17,8 +17,10 @@ int main() {
 	shint = -34000;
 
 	ptr1 = formatled;
+	ptr2 = formatled;
 
 	strcpy(ptr1, "this is formatled error");
+	makeErrorStr(ptr2);
 	printf("%s \n", ptr1);
 
 	if(compare(str1,str2)) {
