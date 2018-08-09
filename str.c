@@ -1,4 +1,7 @@
+#include <stdio.h>
 #include <string.h>
+
+char maxstr[10];
 
 char compare(char *str1, char *str2)
 {
@@ -21,4 +24,5 @@ char compare(char *str1, char *str2)
 void makeErrorStr(char *str1)
 {
 	strcpy(str1, "this is formatled error");
+	strcpy(maxstr, "this is formatled error");
 }
