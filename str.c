@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char maxstr[10];
+char maxstr[10]="test";
 
 char compare(char *str1, char *str2)
 {
