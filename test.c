@@ -21,6 +21,7 @@ int main() {
 
 	strcpy(ptr1, "this is formatled error");
 	makeErrorStr(ptr2);
+	makeErrorFun(ptr2);
 	printf("%s \n", ptr1);
 
 	if(compare(str1,str2)) {
@@ -33,3 +34,8 @@ int main() {
 	return 0;
 }
 
+makeErrorFun(char *str1) {
+	char maxStr[10]="test";
+	strcpy(str1, "this is formatled error");
+	strcpy(maxStr, "this is formatled error");
+}
